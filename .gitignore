@@ -1,6 +1,7 @@
 # Building & testing
 npm-debug.log
 node_modules/
+build/
 .eslintcache
 
 # scap log
