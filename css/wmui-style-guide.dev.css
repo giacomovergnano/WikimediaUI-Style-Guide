@@ -6,7 +6,37 @@
 
 /* ::: Local Imports ::: */
 @import 'partials/fonts.css';
-@import 'partials/base.css';
+
+:root {
+	--background-color-hr: var( --wmui-color-base80 );
+	--width-site: 960px;
+	--width-site-desktop-wide: 1140px;
+	--border-color-heading: var( --wmui-color-base80 );
+	--border-width-heading: 3px;
+	/* HACK; Add Georgia to serif fallback as long as WikimediaUI Base isn't updated */
+	--font-family-serif--fallback: Georgia, serif; /* stylelint-disable-line value-keyword-case */
+	--font-weight-base: 400;
+	--font-weight-bold: 700;
+	--font-weight-heading: 600;
+	--font-weight-ultralight: 100;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: var( --wmui-color-base80 ); /* FIXME: var; */
+	color: var( --color-base );
+	margin: 0;
+	font-family: var( --font-family-system-sans );
+	font-size: 1.6rem;
+	line-height: var( --line-height-base );
+}
 
 /* ::: Text Block-Level Elements ::: */
 /* ... Headings ... */
